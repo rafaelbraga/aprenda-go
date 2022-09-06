@@ -9,10 +9,10 @@ package main
 import "fmt"
 
 func main() {
-	array := [5]int{0, 1, 2, 3, 4}
+	array := [5]int{00, 10, 20, 30, 40}
 
-	for num := range array {
-		println(num)
+	for i, num := range array {
+		println(i, " ", num)
 
 	}
 	fmt.Printf("%T", array)
